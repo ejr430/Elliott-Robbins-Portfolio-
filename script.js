@@ -1,5 +1,5 @@
 // Function to show/hide sections
-function showSection(sectionId) {
+function showSection(sectionId, eventArg) {
     // Hide all sections
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
@@ -18,8 +18,10 @@ function showSection(sectionId) {
         link.style.borderBottom = '2px solid transparent';
     });
 
-    // Add active state to clicked link
-    event.target.style.borderBottom = '2px solid white';
+    const clickedLink = eventArg && eventArg.target ? eventArg.target : document.querySelector(`.nav-link[href="#${sectionId}"]`);
+    if (clickedLink && clickedLink.style) {
+        clickedLink.style.borderBottom = '2px solid white';
+    }
 }
 
 // Initialize - show About Me section by default
