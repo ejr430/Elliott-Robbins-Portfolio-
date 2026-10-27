@@ -146,15 +146,15 @@ body {
 .about-image-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-    max-width: 560px;
-    margin: 24px auto 0;
+    gap: 6px;
+    max-width: 196px;
+    margin: 8px auto 0;
 }
 
 .about-image-gallery img {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 63px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -401,7 +401,7 @@ body {
     }
 
     .about-image-gallery img {
-        height: 140px;
+        height: 49px;
     }
 
     .project-card,
@@ -447,11 +447,11 @@ body {
     }
 
     .about-image-gallery {
-        gap: 10px;
+        gap: 4px;
     }
 
     .about-image-gallery img {
-        height: 120px;
+        height: 42px;
     }
 
     .project-card,
