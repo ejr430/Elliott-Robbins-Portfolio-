@@ -164,7 +164,8 @@ body {
     transform: translateY(-5px);
 }
 
-.project-date {
+.project-date,
+.project-status {
     display: inline-block;
     background: var(--primary-color);
     color: var(--white);
@@ -309,114 +310,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Employment Section */
-.employment-list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.job-card {
-    background: var(--white);
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    border-top: 3px solid var(--secondary-color);
-    transition: all 0.3s ease;
-}
-
-.job-card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-3px);
-}
-
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.job-header h3 {
-    color: var(--text-dark);
-    font-size: 1.3rem;
-}
-
-.job-date {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.job-description {
-    color: var(--text-light);
-    line-height: 1.8;
-    font-size: 1rem;
-}
-
-/* FYRE Assignments Section */
-.fyre-content {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-}
-
-.fyre-intro {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--border-color);
-}
-
-.fyre-intro p {
-    font-size: 1.1rem;
-    color: var(--text-dark);
-}
-
-.fyre-placeholder {
-    background: var(--light-bg);
-    padding: 40px 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px dashed var(--border-color);
-}
-
-.fyre-placeholder p {
-    color: var(--text-light);
-    font-style: italic;
-    font-size: 1.05rem;
-}
-
-.fyre-link {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--white);
-    padding: 15px 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow);
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
-    text-decoration: none;
-    color: var(--white);
-}
-
 /* Footer */
 .footer {
     background: var(--primary-color);
@@ -465,14 +358,8 @@ body {
 
     .project-card,
     .cert-card,
-    .skill-category,
-    .job-card {
+    .skill-category {
         padding: 20px;
-    }
-
-    .job-header {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .cert-header {
@@ -513,8 +400,7 @@ body {
 
     .project-card,
     .cert-card,
-    .skill-category,
-    .job-card {
+    .skill-category {
         padding: 15px;
     }
 
